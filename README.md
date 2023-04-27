@@ -6,7 +6,7 @@ If you find problems with the file format (in particular security related issues
 
 ## Requirements
 
-  - [Python 3.7](https://www.python.org/downloads/)
+  - [Python 3.11](https://www.python.org/downloads/)
   - [pipenv](https://github.com/pypa/pipenv)
   - An encrypted OTP Auth backup/account file
 
@@ -29,12 +29,12 @@ pipenv install
 
 ```
 # Decrypt a full backup file
-pipenv run python decrypt_otpauth.py decrypt_backup --encrypted-otpauth-backup <path to your OTP Auth backup>
+pipenv run python decrypt_otpauth.py decrypt-backup --encrypted-otpauth-backup <path to your OTP Auth backup>
 ```
 
 ```
 # Decrypt a single account export
-pipenv run python decrypt_otpauth.py decrypt_account --encrypted-otpauth-account <path to your OTP Auth account>
+pipenv run python decrypt_otpauth.py decrypt-account --encrypted-otpauth-account <path to your OTP Auth account>
 ```
 
 ## Demo
